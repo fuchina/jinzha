@@ -1,0 +1,12 @@
+不要远程git仓库，按照如下操作后就可以本地打包静态库了；
+
+1.在podspec文件所在目录执行 git init命令；
+
+2.本地打tag，版本号对应podspec中version；
+
+3.podspce中source指向本地podspec所在目录；
+
+4.使用
+	pod package XXX.podspec --library --force
+
+  就可以打包成功。
